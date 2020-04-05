@@ -22,15 +22,16 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js"],
   },
   module: {
+    strictExportPresence: true,
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        include: path.resolve(__dirname, "../src"),
+        include: path.resolve(__dirname, "./src"),
         use: [babelLoader, tsLoader],
       },
       {
-        test: /\.(js)$/,
-        include: path.resolve(__dirname, "../src"),
+        test: /\.(js|jsx)$/,
+        include: path.resolve(__dirname, "./src"),
         use: babelLoader,
       },
     ],

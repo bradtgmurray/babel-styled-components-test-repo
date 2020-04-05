@@ -21,6 +21,7 @@
     "styled-components": "^5.0.1"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "build:watch": "webpack --config webpack.config.js --watch"
   }
 }

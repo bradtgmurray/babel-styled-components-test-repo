@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 const Header: React.FunctionComponent<{ className: string }> = ({
   className,
-}) => <h1 class={className}>Hello World</h1>;
+}) => <h1 className={className}>Hello World</h1>;
 
 const Content: React.FunctionComponent<{ className: string }> = ({
   className,
-}) => <p class={className}>This is some high quality content</p>;
+}) => <p className={className}>This is some high quality content</p>;
 
 const StyledHeader = styled(Header)`
   color: red;
